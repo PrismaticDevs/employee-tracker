@@ -40,12 +40,14 @@ const questions = () => inquirer.prompt([{
         if (answers.todo === "View all employees") {
             try {
                 connection.query('SELECT * FROM employee', (err, results) => {
-                    console.log("All employees");
+                    console.log("Employees:");
                     for (let i = 0; i < results.length; i++) {
                         console.log("_____________");
                         console.log('Id:', results[i].id);
                         console.log('First name:', results[i].first_name);
                         console.log('Last name:', results[i].last_name);
+                        console.log('Role ID:', results[i].role_id);
+                        console.log('Manager ID:', results[i].manager_id);
                         console.log("_____________");
                     }
                     questions();
