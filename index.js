@@ -158,7 +158,7 @@ const questions = () => inquirer.prompt([{
                 .then(results => {
                     results[0].map(
                         (result) => {
-                            departments.push(result.name);
+                            departments.push(result.id);
                         }
                     );
                 });
@@ -174,7 +174,7 @@ const questions = () => inquirer.prompt([{
                     },
                     {
                         type: 'list',
-                        name: 'department_id',
+                        name: 'department',
                         message: 'Which department is it part of?',
                         choices: departments
                     }
@@ -183,8 +183,9 @@ const questions = () => inquirer.prompt([{
                     let id = uuid();
                     let title = answers.title;
                     let salary = answers.salary;
-                    let department_id = answers.department_id;
+                    let department_id = answers.department;
                     connection.promise().query(`INSERT INTO role (id, title, salary, department_id) VALUES (?, ?, ?, ?)`, [id, title, salary, department_id]);
+                    console.log(department_id);
                     questions();
                 });
         } // END Add roles
