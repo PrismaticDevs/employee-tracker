@@ -4,10 +4,8 @@
 
 - [License](#license)
 - [Description](#description)
-- [Installation](#installation)
 - [Usage](#instructions)
 - [Contributors](#contributors)
-- [Testing](#testing)
 - [Questions](#questions)
 
 ## License
@@ -16,23 +14,15 @@
 
 ## Description
 
-This console app is a CMS that allows one to enter and keep track of employee inside of a MySQL database.
-
-## Installation
-
-You must have Node.js and npm installed to run this application Clone this repository into a directory. Run npm install to download the required dependencies.
+This console app is a CMS that allows one to enter and keep track of employee inside of a MySQL database. Employees can be created and assigned roles. For every employee created, a random id is generate to be able to track that item within the database.
 
 ## Usage
 
-Once you have cloned this repo and have run npm install, run node index and answer the following prompts. You can view all employees, add employees, update employee rolls, view roles, add roles, view departments and add departments. To exit the program, select "Exit".
+Because this program requires a database that is only on my local computer, it can not be run elsewhere. To run the app I run node index and answer the following prompts. You can view all employees, add employees, update employee rolls, view roles, add roles, view departments and add departments. To exit the program, select "Exit".
 
 ## Contributors
 
 The University of Denver
-
-## Testing
-
-n/a
 
 ## Questions
 
