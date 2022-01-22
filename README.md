@@ -20,7 +20,7 @@ Clone this repository into a directory. Run npm install to download the required
 Clone this repository into a directory. Run npm install to download the required dependencies. Then run node index and answer the following prompts. 
 
 ## Contributors
-The Universiity of Denver
+The University of Denver
 ## Testing
 n/a
 ## Questions
