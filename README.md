@@ -4,6 +4,7 @@
 
 - [License](#license)
 - [Description](#description)
+- [Video](#video)
 - [Usage](#instructions)
 - [Contributors](#contributors)
 - [Questions](#questions)
@@ -16,6 +17,10 @@
 
 This console app is a CMS that allows one to enter and keep track of employee inside of a MySQL database. Employees can be created and assigned roles. For every employee created, a random id is generate to be able to track that item within the database.
 
+## Video
+
+<a href="https://www.youtube.com/embed/ibA0TLg8Zjo">Click for Video</a>
+
 ## Usage
 
 Because this program requires a database that is only on my local computer, it can not be run elsewhere. To run the app I run node index and answer the following prompts. You can view all employees, add employees, update employee rolls, view roles, add roles, view departments and add departments. To exit the program, select "Exit".
@@ -26,11 +31,7 @@ The University of Denver
 
 ## Questions
 
-Contact me:
+Send questions to: <br>
 Github: [PrismaticDevs](https://github.com/PrismaticDevs) <br>
 Email: matthewbrignola@ymail.com <br>
 Phone: 719-351-5828 <br>
-<<<<<<< HEAD
-=======
-
-> > > > > > > f3548760c1526fe2e1c8a9f37b41018de7379dff

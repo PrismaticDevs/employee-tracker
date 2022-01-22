@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const connection = require('./connection');
 const uuid = require('./helpers/uuid');
-console.log(`Welcome to Employee Tracker - Brought to you by PrismaticDevs`);
 // Options to choose from 
 console.log(`
  ____________________________________________________________________________________
@@ -10,7 +9,7 @@ console.log(`
 |               |  ______|| |__________ __ __ | | ___   _    _  ___  ___
 |               |   _|    |  __   __  ||  ‘_ \\| |/ _ \\ | |  | |/ _ \\/ _ \\
 |               |  |_____ | |  |_|  | ||  |_||| | (_) || |__| |  __/  __/
-|               |________||_|       |_|| ’___/|_|\\___/ \\__    |\\___/\\___/
+|               |________||_|       |_|| ’___/|_|\\___/ \\___   |\\___/\\___/
 |                                      |_|             |_____/
 |               __________                     _
 |              |___   ___|___    ___     ___  | | _    __    _____
@@ -186,6 +185,7 @@ const questions = () => inquirer.prompt([{
                     let department_id = answers.department;
                     connection.promise().query(`INSERT INTO role (id, title, salary, department_id) VALUES (?, ?, ?, ?)`, [id, title, salary, department_id]);
                     console.log(department_id);
+                    getRoles();
                     questions();
                 });
         } // END Add roles
