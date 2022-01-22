@@ -13,10 +13,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 This console app is a CMS that allows one to enter and keep track of employee inside of a MySQL database.
-## Installation 
-Clone this repository into a directory. Run npm install to download the required dependencies. Then run node index and answer the following prompts. 
+## Installation
+Clone this repository into a directory. Run npm install to download the required dependencies.
+
 ## Usage
-Clone this repository.
+Clone this repository into a directory. Run npm install to download the required dependencies. Then run node index and answer the following prompts. 
+
 ## Contributors
 The Universiity of Denver
 ## Testing
