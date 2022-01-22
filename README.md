@@ -20,11 +20,11 @@ This console app is a CMS that allows one to enter and keep track of employee in
 
 ## Installation
 
-Clone this repository into a directory. Run npm install to download the required dependencies.
+You must have Node.js and npm installed to run this application Clone this repository into a directory. Run npm install to download the required dependencies.
 
 ## Usage
 
-Clone this repository into a directory. Run npm install to download the required dependencies. Then run node index and answer the following prompts.
+Once you have cloned this repo and have run npm install, run node index and answer the following prompts. You can view all employees, add employees, update employee rolls, view roles, add roles, view departments and add departments. To exit the program, select "Exit".
 
 ## Contributors
 
