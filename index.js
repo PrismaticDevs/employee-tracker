@@ -153,6 +153,15 @@ const questions = () => inquirer.prompt([{
         } // END Update employee role
         // Add roles
         function addRole() {
+            let departments = [];
+            connection.promise().query('SELECT id FROM department')
+                .then(results => {
+                    results[0].map(
+                        (result) => {
+                            departments.push(result.name);
+                        }
+                    );
+                });
             inquirer.prompt([{
                         type: 'input',
                         name: 'title',
@@ -164,9 +173,10 @@ const questions = () => inquirer.prompt([{
                         message: `Enter the role's salary`
                     },
                     {
-                        type: 'input',
+                        type: 'list',
                         name: 'department_id',
-                        message: 'Which department is it part of?'
+                        message: 'Which department is it part of?',
+                        choices: departments
                     }
                 ])
                 .then(answers => {
