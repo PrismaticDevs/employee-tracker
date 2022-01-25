@@ -19,7 +19,7 @@ This console app is a CMS that allows one to enter and keep track of employee in
 
 ## Video
 
-<a href="https://www.youtube.com/embed/ibA0TLg8Zjo">Click for Video</a>
+<a href="https://www.youtube.com/watch?v=EUmDZwpzXdM">Click for Video</a>
 
 ## Usage
 
